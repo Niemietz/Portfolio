@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Renan Santos'— Full Stack Software Developer portfolio">
+  <title>Renan Santos'— Full Stack Software Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.26.25/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.26.25/sweetalert2.min.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Renan Santos' Portfolio">
+      <span class="brand-mark">R.</span>
+      <span>Renan Santos</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Hello</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Work</a>
+      <a href="#blog" class="hidden">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="header-cta" href="#contact">LET'S TALK</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, I'M A</p>
+        <h1>Full Stack Software <span><u>Developer.</u></span></h1>
+        <p class="hero-text">
+          Hi! I'm Renan Santos, a passionate Full Stack Software Developer based in Oporto (Portugal).
+          Welcome to my portfolio world.
+        </p>
+        <a class="button" href="#portfolio">VIEW PORTFOLIO</a>
+        <a class="button button-dark" target="_blank" href="https://linkedin.com/in/renan-niemietz-cardoso">LINKED IN</a>
+
+        <div class="hero-stat">
+          <span class="tiny-line"></span>
+          <div><strong>Bachalor Degree</strong><small>in Computer Science</small></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="green-orb"></div>
+        <div class="hex hex-1"></div>
+        <div class="hex hex-2"></div>
+        <div class="dots"></div>
+        <!-- <img src="assets/hero-person.png" alt="Renan Santos standing with folded arms"> -->
+        <img src="" alt="Renan Santos standing with folded arms">
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-art">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="about-green"></div>
+        <!-- <img src="assets/about-person.png" alt="Renan Santos"> -->
+        <img src="" alt="Renan Santos">
+        <div class="badge badge-projects"><strong>40+</strong><span>Projects Completed</span></div>
+        <div class="badge badge-years"><strong>11+</strong><span>Years of Experience</span></div>
+        <div class="badge badge-clients"><strong>8+</strong><span>Happy Clients</span></div>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About <span>me</span></h2>
+        <h3>A story of hardwork and perseverance.</h3>
+        <p>
+          I’m Renan Santos, a passionate Full Stack Software Developer focused on creating digital
+          experiences that are simple, useful and memorable. I combine thoughtful
+          interaction design with clean visual systems to help products and systems to communicate better.
+        </p>
+        <p>
+          My approach is collaborative and practical: understand the problem, explore
+          ideas, develop and test them, then turn the strongest solution into a polished experience.
+        </p>
+
+        <div class="about-actions">
+          <a class="button" href="#contact">HIRE ME</a>
+          <a class="button button-dark" href="#" id="downloadCv">DOWNLOAD CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I WILL DO FOR YOU</p>
+        <h2>My <span>Services</span></h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card featured">
+          <div class="service-icon">✦</div>
+          <p>01 SERVICE</p>
+          <h3>Mobile App</h3>
+          <span>Android app, focused on your business. Facilitate the communication with your customers</span>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">◇</div>
+          <p>02 SERVICE</p>
+          <h3>Website &amp; Web Apps</h3>
+          <span>Creative and dynamic website, to exposure your brand, offer the product and do the marketing.</span>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">▣</div>
+          <p>03 SERVICE</p>
+          <h3>UI &amp; UX Design</h3>
+          <span>Wireframes, prototypes, design systems and delightful user experiences.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="portfolio-top">
+        <div>
+          <p class="eyebrow">CHECK MY WORKS</p>
+          <h2>Port<span>folio</span></h2>
+        </div>
+
+        <div class="filters" role="tablist">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="mobile">Mobile Apps</button>
+          <button class="filter" data-filter="website">Websites &amp; Web Apps</button>
+          <button class="filter" data-filter="other">Others</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="work-card" data-category="mobile" onclick="window.open('https://niemietz.github.io/Android-App-Generator/')">
+          <div class="work-image work-1"></div>
+          <div class="work-meta"><h3>Android App Generator</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Automotive Android app (for BMW as a client)</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="website" onclick="window.open('https://github.com/Niemietz/Bakery-Sample-Node-JS/')">
+          <div class="work-image work-2"></div>
+          <div class="work-meta"><h3>Bakery Website Sample</h3><p>Websites</p></div>
+        </article>
+        <article class="work-card" data-category="website" onclick="window.open('https://github.com/Niemietz/GymSample/')">
+          <div class="work-image work-website-default-3"></div>
+          <div class="work-meta"><h3>Gym Website Sample</h3><p>Websites</p></div>
+        </article>
+        <article class="work-card" data-category="mobile" onclick="window.open('https://github.com/Niemietz/Android-Native-App-Unity/')">
+          <div class="work-image work-app-default"></div>
+          <div class="work-meta"><h3>Android Native App with Interactive 3D Graphic</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Mobile house automation app (for Atlo as a client)</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Mobile finance app (for Natixis as a client)</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile" onclick="window.open('https://github.com/Niemietz/tcc/')">
+          <div class="work-image work-app-default"></div>
+          <div class="work-meta"><h3>Recycling Map</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Mobile app features (for Itaú bank as a client)</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="other" onclick="window.open('https://github.com/Niemietz/jogo-da-velha/')">
+          <div class="work-background">
+            <div class="work-image work-3"></div>
+          </div>
+          <div class="work-meta"><h3>Tic-Tac-Toe (made in Java for Terminal)</h3><p>Others</p></div>
+        </article>
+        <article class="work-card" data-category="other">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Pong (made in Java)</h3><p>Others</p></div>
+        </article>
+        <article class="work-card" data-category="website" onclick="window.open('https://8engenharia.com.br/')">
+          <div class="work-background">
+            <div class="work-image work-4"></div>
+          </div>
+          <div class="work-meta"><h3>8 Engenharia (custom website for a client)</h3><p>Websites</p></div>
+        </article>
+        <article class="work-card" data-category="website">
+          <div class="work-background">
+            <div class="work-image work-website-default-3"></div>
+          </div>
+          <div class="work-meta"><h3>Boletos (Management app)</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="website" onclick="window.open('https://github.com/Niemietz/massimp/')">
+          <div class="work-background">
+            <div class="work-image work-website-default-1"></div>
+          </div>
+          <div class="work-meta"><h3>Massimp (Spreadsheet to JS Object)</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="website">
+          <div class="work-background">
+            <div class="work-image work-website-default-4"></div>
+          </div>
+          <div class="work-meta"><h3>Quadrantes (Management app)</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Meu Vale</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Meu Clube</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Meu Help</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="website">
+          <div class="work-background">
+            <div class="work-image work-website-default-5"></div>
+          </div>
+          <div class="work-meta"><h3>Meu Help (Management app)</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="website">
+          <div class="work-background">
+            <div class="work-image work-website-default-1"></div>
+          </div>
+          <div class="work-meta"><h3>Notificações / Notifications (Management app)</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="website">
+          <div class="work-background">
+            <div class="work-image work-website-default-2"></div>
+          </div>
+          <div class="work-meta"><h3>Promoções / Promotions (Management app)</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="mobile">
+          <div class="work-background">
+            <div class="work-image work-app-default"></div>
+          </div>
+          <div class="work-meta"><h3>Farmaco (Prototype)</h3><p>Mobile Apps</p></div>
+        </article>
+        <article class="work-card" data-category="other">
+          <div class="work-background">
+            <div class="work-image work-website-default-2"></div>
+          </div>
+          <div class="work-meta"><h3>Kinect+VR (Prototype)</h3><p>Other</p></div>
+        </article>
+        <article class="work-card" data-category="website">
+          <div class="work-background">
+            <div class="work-image work-website-default-3"></div>
+          </div>
+          <div class="work-meta"><h3>IAT - Informações sobre Acidentes de Trânsito</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="website">
+          <div class="work-background">
+            <div class="work-image work-website-default-1"></div>
+          </div>
+          <div class="work-meta"><h3>PTC - Programa de Transporte Coletivo</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="website">
+          <div class="work-background">
+            <div class="work-image work-website-default-2"></div>
+          </div>
+          <div class="work-meta"><h3>Talões ZA</h3><p>Web Apps</p></div>
+        </article>
+        <article class="work-card" data-category="other">
+          <div class="work-background">
+            <div class="work-image work-website-default-4"></div>
+          </div>
+          <div class="work-meta"><h3>Aranex</h3><p>Other</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="blog section hidden" id="blog">
+      <div class="section-heading">
+        <p class="eyebrow">LATEST ARTICLES</p>
+        <h2>My <span>Blog</span></h2>
+      </div>
+
+      <div class="blog-grid">
+        <article><div class="blog-thumb b1"></div><p>DESIGN PROCESS</p><h3>How I turn ideas into useful interfaces</h3></article>
+        <article><div class="blog-thumb b2"></div><p>UI &amp; UX</p><h3>Small details that make a product feel polished</h3></article>
+        <article><div class="blog-thumb b3"></div><p>CAREER</p><h3>Building a better portfolio with fewer projects</h3></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">HAVE A PROJECT?</p>
+        <h2>Let's work <span>together.</span></h2>
+        <p>Tell me a little about your project and I’ll get back to you as soon as possible.</p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+        </div>
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+        <button class="button" type="submit">SEND MESSAGE</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand"><span class="brand-mark">R.</span><span>Renan Santos</span></div>
+    <p><span id="year"></span> Renan Santos. Full Stack Software Developer.</p>
+    <div class="socials"><a target="_blank" href="https://linkedin.com/in/renan-niemietz-cardoso">in</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
