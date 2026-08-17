@@ -6,7 +6,7 @@
 
 #### Please, access my main portfolio page 👇:
 
-### https://niemietz.github.io/Portfolio.git
+### https://niemietz.github.io/Portfolio
 
 # 💾 Some of My Works
 
