@@ -60,7 +60,7 @@ img { max-width: 100%; display: block; }
 .nav a { color:#9ca5aa; font-size:14px; font-weight:700; transition:.2s; }
 .nav a:hover, .nav a.active { color:var(--green); }
 .header-cta {
-  font-size:10px; font-weight:800; letter-spacing:.5px;
+  font-size:12px; font-weight:800; letter-spacing:.5px;
   border:1px solid rgba(31,228,125,.55);
   padding:9px 18px; border-radius:3px;
   color:var(--green);
@@ -96,6 +96,7 @@ h1 span,h2 span { color:var(--green); }
   cursor:pointer; transition:.2s;
 }
 .button:hover { transform:translateY(-2px); background:#4af39a; }
+.button-github { margin-left:0 !important; }
 .button-dark { background:transparent; color:#c8ced1; border:1px solid #586168; margin-left:10px; }
 .hero-stat { display:flex; align-items:center; gap:12px; margin-top:72px; }
 .tiny-line { width:28px; height:2px; background:var(--green); }
